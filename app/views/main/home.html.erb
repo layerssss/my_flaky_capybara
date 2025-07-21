@@ -1,7 +1,13 @@
 <h1>Main#home</h1>
 <p>Find me in app/views/main/home.html.erb</p>
 <p><label for="email">Email</label></p>
-<p><input type="text" id="email" name="email" placeholder="Enter your email"></p>
+<p><input type="text" disabled id="email" name="email" placeholder="Enter your email"></p>
 <p><label for="password">Password</label></p>
 <p><input type="password" id="password" name="password" placeholder="Enter your password"></p>
-<p><button type="submit" onclick="document.write('Success');">Sign in</button></p>
+<p><button type="submit" onclick="setTimeout(()=> document.write('Success'), 1000)">Sign in</button></p>
+
+<script>
+    setTimeout(() => {
+        document.querySelector('input[name="email"]').disabled = false;
+    }, 2000);
+</script>
