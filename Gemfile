@@ -55,3 +55,9 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
+gem "rspec-rails", "~> 8.0"
+
+gem "capybara", "~> 3.40"
+
+gem "selenium-webdriver", "~> 4.34"
